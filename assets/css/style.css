@@ -111,6 +111,7 @@ main {
     background-color: var(--purple-500);
     color: var(--white);
 }
+
 .botao:hover {
     border-color: var(--purple-800);
     background-color: var(--purple-800);
@@ -125,6 +126,7 @@ main {
     background-color: transparent;
     color: var(--purple-500);
 }
+
 .botao-outline:hover {
     border-color: var(--purple-500);
     background-color: var(--purple-500);
@@ -153,11 +155,13 @@ header {
     background-color: var(--purple-800);
     box-shadow: var(--shadow-sm);
 }
+
 header a {
     font-weight: 600;
     color: var(--white);
     transition: color 0.3s ease;
 }
+
 header a:hover {
     color: var(--purple-100);
 }
@@ -168,6 +172,7 @@ header a:hover {
     font-size: var(--text-2x1);
     font-weight: 700;
 }
+
 .menu-content {
     display: flex;
     justify-content: space-between;
@@ -177,12 +182,14 @@ header a:hover {
     margin: 0 auto;
     padding: 0 var(--spacing-md);
 }
+
 .menu-list {
     display: flex;
     gap: var(--spacing-lg);
     list-style: none;
 }
-.menu-list a{
+
+.menu-list a {
     padding: var(--spacing-xs);
 }
 
@@ -234,29 +241,31 @@ header a:hover {
 
 /* Animação flutuante */
 @keyframes float {
-0%,
-100% {
-transform: translateY(0);
-}
 
-50% {
-transform: translateY(-1.25rem);
-}
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-1.25rem);
+    }
 }
 
 .float-animation {
-animation: float 3s ease-in-out infinite;
+    animation: float 3s ease-in-out infinite;
 }
 
 .about-container {
     display: flex;
     align-items: center;
     gap:
-    var(--spacing-2xl);
+        var(--spacing-2xl);
     margin: var(--spacing-2x1) auto;
     border-radius: var(--radius-lg);
     background-color: var(--gray-200);
 }
+
 .about-image {
     flex: 0 0 17.5rem;
 }
@@ -487,14 +496,7 @@ project-buttons {
 }
 
 .social-icon:hover img {
-filter: brightness(0)
-        saturate (100%)
-        invert (42%)
-        sepia (93%)
-        saturate (1352%)
-        hue-rotate(243deg)
-        brightness (79%)
-        contrast (91%);
+    filter: brightness(0) saturate (100%) invert (42%) sepia (93%) saturate (1352%) hue-rotate(243deg) brightness (79%) contrast (91%);
 }
 
 /* Formulário */
@@ -586,371 +588,424 @@ footer {
 }
 
 .success-icon img {
-width: 6rem;
-height: 6em;
-filter: brightness (0)
+    width: 6rem;
+    height: 6em;
+    filter: brightness(0)
         saturate (100%)
-        invert(11%)
-        sepia (69%)
-        saturate (3759%)
-        hue-rotate (256deg)
-        brightness (101%)
-        contrast(96%);
+        invert (42%)
+        sepia (93%)
+        saturate (1352%)
+        hue-rotate(243deg)
+        brightness (79%)
+        contrast (91%);
+
 }
 
 
+@media screen and (max-width: 1024px) {
+
+    /* Layout */
+    .section-container {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    /* Tipografia */
+    .section-container h1 {
+        font-size: var(--text-3x1);
+    }
+
+    .section-container h2 {
+        font-size: var(--text-2x1);
+    }
+
+    .section-container p {
+        font-size: var(--text-base);
+    }
+
+    .section-container span {
+        font-size: var(--text-1g);
+    }
+
+    .success-content h1 {
+        font-size: var(--text-3x1);
+    }
+
+    .success-content h2 {
+        font-size: var(--text-xl);
+    }
+
+    /* Header Oculta menu em telas pequenas */
+    @media (max-width: 768px) {
+        .menu-list {
+            display: none;
+        }
+    }
+
+
+    /* Hero */
+    .hero-container {
+        flex-direction: column-reverse;
+        gap: var(--spacing-lg);
+        min-height: 60vh;
+        text-align: center;
+    }
+
+    .hero-content,
+    .hero-image {
+        width: 90%;
+    }
+
+    .hero-image img {
+        object-fit: cover;
+    }
+
+    .buttons-container {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .hero-container .botao,
+    .hero-container .botao-outline {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.95rem;
+        white-space: nowrap;
+    }
+
+    /* About */
+    .about-container {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        margin: var(--spacing-lg);
+        padding: var(--spacing-lg);
+    }
+
+    .about-image {
+        flex: 00 auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-image img {
+        max-width: 16rem;
+        width: 100%;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .about-buttons-data {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        align-items: stretch;
+    }
+
+    .about-buttons-data .botao {
+        margin-right: 0;
+    }
+
+    .data-container {
+        justify-content: center;
+        width: 100%;
+    }
 
 
 
 
-@media screen and (max-width: 1024px)
 
-/* Layout */
-.section-container {
-    padding: var(--spacing-lg) var(--spacing-md);
-}
 
-/* Tipografia */
-.section-container h1 { font-size: var(--text-3x1);
-}
 
-.section-container h2 {
-    font-size: var(--text-2x1);
-}
+    /* Projects */
+    .projects-container {
+        margin: var(--spacing-1g) auto 0;
+    }
 
-.section-container p {
-    font-size: var(--text-base);
-}
+    .projects-swiper {
+        margin: 0;
+        padding: var(--spacing-sm) var(--spacing-1g) 2.5rem;
+    }
 
-.section-container span {
-    font-size: var(--text-1g);
-}
+    .project-card {
+        width: 100%;
+        height: 30rem;
+        min-height: 30rem;
+        max-height: 30rem;
+        max-width: 100%;
+    }
 
-.success-content h1 {
-    font-size: var(--text-3x1);
-}
+    .project-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
 
-.success-content h2 {
-    font-size: var(--text-xl);
-}
+    .project-content p {
+        flex: 1;
+        overflow: hidden;
+    }
 
-/* Header Oculta menu em telas pequenas */
-@media (max-width: 768px) {
-    .menu-list {
+    .project-tags {
+        min-height: 2.5rem;
+        align-items: flex-start;
+    }
+
+    .swiper-wrapper {
+        align-items: stretch;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        height: auto;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
         display: none;
     }
-}   
+
+    /* Contact */
+    .contact-container {
+
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Success Page */
+    .success-container {
+        padding: var(--spacing-x1) var(--spacing-md);
+        min-height: calc(100vh 10rem);
+    }
+
+    .success-content {
+        gap: var(--spacing-lg);
+        max-width: 35rem;
+    }
+
+    .success-icon {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .success-icon img {
+        width: 5rem;
+        height: 5rem;
+    }
 
 
-/* Hero */
-.hero-container {
-    flex-direction: column-reverse;
-    gap: var(--spacing-lg);
-    min-height: 60vh;
-    text-align: center;
-}
+    @media screen and (max-width: 480px) {
 
-.hero-content,
-.hero-image {
-    width: 90%;
-}
+        /* Layout */
+        .section-container {
+            padding: var(--spacing-md) var(--spacing-sm);
+        }
 
-.hero-image img {
-object-fit: cover;
-}
+        /* Tipografia Mobile */
+        .section-container h1 {
+            font-size: var(--text-x1);
+        }
 
-.buttons-container {
-    justify-content: center;
-    width: 100%;
-}
+        .section-container h2 {
+            font-size: var(--text-xl);
+        }
 
-.hero-container .botao,
-.hero-container .botao-outline {
-    padding: 0.75rem 1.5rem;
-    font-size: 0.95rem;
-    white-space: nowrap;
-}
+        .section-container p {
+            font-size: var(--text-base);
+        }
 
-/* About */
-.about-container {
-flex-direction: column;
-gap: var(--spacing-md);
-margin: var(--spacing-lg);
-padding: var(--spacing-lg);
-}
-.about-image {
-flex: 00 auto;
-width: 100%;
-display: flex;
-justify-content: center;
-}
-.about-image img {
-max-width: 16rem;
-width: 100%;
-}
-.about-content {
-width: 100%;
-}
-.about-buttons-data {
-flex-direction: column;
-gap: var(--spacing-md);
-align-items: stretch;
-}
-.about-buttons-data .botao {
-margin-right: 0;
-}
-.data-container {
-justify-content: center;
-width: 100%;
-}
+        .section-container span {
+            font-size: var(--text-lg);
+        }
 
+        .success-content h1 {
+            font-size: var(--text-xl);
+        }
 
+        .success-content h2 {
+            font-size: var(--text-base);
+        }
 
+        /* Header */
+        #titulo {
+            font-size: var(--text-xl);
+        }
 
+        .menu-list {
+            display: none;
+        }
 
+        /* Hero */
+        .hero-container {
+            gap: var(--spacing-sm);
+        }
 
+        .hero-content {
+            gap: var(--spacing-xs);
+            width: 100%;
+        }
 
-/Projects/
-.projects-container {
-margin: var(--spacing-1g) auto 0;
-}
-.projects-swiper {
-}
-margin: 0;
-padding: var(--spacing-sm) var(--spacing-1g) 2.5rem;
-.project-card {
-width: 100%;
-height: 30rem;
-min-height: 30rem;
-max-height: 30rem;
-max-width: 100%;
-}
-.project-content {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-height: 100%;
-}
-.project-content p {
-flex: 1;
-overflow: hidden;
-}
-.project-tags {
-min-height: 2.5rem;
-align-items: flex-start;
-}
-.swiper-wrapper {
-align-items: stretch;
-}
-.swiper-slide {
-display: flex;
-justify-content: center;
-align-items: stretch;
-}
-height: auto;
-.swiper-button-next,
-.swiper-button-prev {
-display: none;
-}
+        .buttons-container {
+            flex-direction: column;
+            gap: 0.75rem;
+            width: 100%;
+        }
 
-/* Contact */
-.contact-container {
-}
-grid-template-columns: 1fr;
-gap: var(--spacing-lg);
-width: 90%;
-margin: 0 auto;
-/* Success Page */
-.success-container {
-padding: var(--spacing-x1) var(--spacing-md);
-min-height: calc(100vh 10rem);
-}
-.success-content {
-gap: var(--spacing-lg);
-max-width: 35rem;
-}
-.success-icon {
-width: 6rem;
-height: 6rem;
-}
-.success-icon img {
-width: 5rem;
-height: 5rem;
-}
+        .buttons-container.botao,
+        .buttons-container .botao-outline {
+            width: 100%;
+        }
 
+        .hero-container .botao,
+        .hero-container.botao-outline {
+            padding: 0.75rem 1rem;
+            font-size: 0.95rem;
+            white-space: nowrap;
+        }
 
-@media screen and (max-width: 480px) {
-/* Layout */
-.section-container {
-padding: var(--spacing-md) var(--spacing-sm);
-}
-/* Tipografia Mobile */
-.section-container h1 {
-font-size: var(--text-x1);
-}
-.section-container h2 {
-font-size: var(--text-xl);
-}
-.section-container p {
-font-size: var(--text-base);
-}
-.section-container span {
-font-size: var(--text-lg);
-}
-.success-content h1 {
-font-size: var(--text-xl);
-}
-.success-content h2 {
-font-size: var(--text-base);
-}
-/* Header */
-#titulo {
-font-size: var(--text-xl);
-}
-.menu-list {
-display: none;
-}
+        .hero-image {
+            width: 100%;
+        }
 
-/* Hero */
-.hero-container {
-gap: var(--spacing-sm);
-}
-.hero-content {
-gap: var(--spacing-xs);
-width: 100%;
-}
-.buttons-container {
-flex-direction: column;
-gap: 0.75rem;
-width: 100%;
-}
-.buttons-container.botao,
-.buttons-container .botao-outline {
-width: 100%;
-}
-.hero-container .botao,
-.hero-container.botao-outline {
-padding: 0.75rem 1rem;
-font-size: 0.95rem;
-white-space: nowrap;
-}
-.hero-image {
-width: 100%;
-}
-.hero-image img {
-max-width: 20rem;
-}
+        .hero-image img {
+            max-width: 20rem;
+        }
 
-/ About
-.about-container {
-margin: var(--spacing-lg) 0.5rem;
-var(--spacing-md); padding:
-}
-.about-image img {
-max-width: 14rem;
-}
-.about-buttons-data.botao,
-.about-buttons-data.botao-outline {
-width: 100%;
-padding: 0.75rem var(--spacing-lg);
-font-size: var(--text-base);
-text-align: center;
-}
-.data-number {
-font-size: var(--text-1g);
-}
-.data-label {
-font-size: var(--text-sm);
-}
+        /* About */
+        .about-container {
+            margin: var(--spacing-lg) 0.5rem;
+            padding: var(--spacing-md);
+        }
 
-/* Projects */
-.projects-container {
-margin: var(--spacing-lg) auto 0;
-}
-.projects-swiper {
-position: relative;
-margin: 0;
-padding: var(--spacing-sm) 0 2rem 0;
-overflow: visible;
-}
-.project-card   {
-width: 100%;
-height: 20rem;
-max-width: 20rem;
-}
-.project-image {
-height: 10rem;
-}
-.project-content {
-padding: var(--spacing-md);
-}
-.project-content h3 {
-font-size: 1.25rem;
-}
-.project-content p {
-font-size: 0.95rem;
-}
+        .about-image img {
+            max-width: 14rem;
+        }
 
-/* Contact */
-.contact-container (
-width: 100%;
-}
-.contact-info p {
-margin-bottom: var(--spacing-md);
-}
-.social-container {
-flex-wrap: wrap;
-gap: var(--spacing-1g);
-margin-bottom: var(--spacing-xs);
-}
-.social-icon {
-width: 4rem;
-height: 4rem;
-}
+        .about-buttons-data.botao,
+        .about-buttons-data.botao-outline {
+            width: 100%;
+            padding: 0.75rem var(--spacing-lg);
+            font-size: var(--text-base);
+            text-align: center;
+        }
 
-/* Formulário */
-form {
-gap: var(--spacing-sm);
-}
-form label {
-font-size: 0.95rem;
-}
-form input,
-form textarea {
-padding: 0.75rem;
-font-size: var(--text-base);
-}
-form button {
-padding: 0.75rem var(--spacing-md);
-font-size: var(--text-base);
-}
+        .data-number {
+            font-size: var(--text-1g);
+        }
 
-/* Footer */
-footer {
-padding: var(--spacing-md) var(--spacing-sm);
-font-size: var(--text-sm);
-}
-/ Success Page */
-.success-container {
-padding: var(--spacing-1g) var(--spacing-sm);
-min-height: calc(100vh8rem);
-}
-.success-content {
-gap: var(--spacing-md);
-max-width: 100%;
-padding: 0 var(--spacing-sm);
-}
-.success-icon {
-width: 5rem;
-height: 5rem;
-}
-.success-icon img {
-width: 4rem;
-height: 4rem;
-}
-.success-content .botao {
-width: 100%;
-max-width: 20rem;
-padding: 0.75rem var(--spacing-lg);
-}
-}
+        .data-label {
+            font-size: var(--text-sm);
+        }
+
+        /* Projects */
+        .projects-container {
+            margin: var(--spacing-lg) auto 0;
+        }
+
+        .projects-swiper {
+            position: relative;
+            margin: 0;
+            padding: var(--spacing-sm) 0 2rem 0;
+            overflow: visible;
+        }
+
+        .project-card {
+            width: 100%;
+            height: 20rem;
+            max-width: 20rem;
+        }
+
+        .project-image {
+            height: 10rem;
+        }
+
+        .project-content {
+            padding: var(--spacing-md);
+        }
+
+        .project-content h3 {
+            font-size: 1.25rem;
+        }
+
+        .project-content p {
+            font-size: 0.95rem;
+        }
+
+        /* Contact */
+        .contact-container {
+            width: 100%;
+        }
+
+        .contact-info p {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .social-container {
+            flex-wrap: wrap;
+            gap: var(--spacing-1g);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .social-icon {
+            width: 4rem;
+            height: 4rem;
+        }
+
+        /* Formulário */
+        form {
+            gap: var(--spacing-sm);
+        }
+
+        form label {
+            font-size: 0.95rem;
+        }
+
+        form input,
+        form textarea {
+            padding: 0.75rem;
+            font-size: var(--text-base);
+        }
+
+        form button {
+            padding: 0.75rem var(--spacing-md);
+            font-size: var(--text-base);
+        }
+
+        /* Footer */
+        footer {
+            padding: var(--spacing-md) var(--spacing-sm);
+            font-size: var(--text-sm);
+        }
+
+        /* Success Page */
+        .success-container {
+            padding: var(--spacing-1g) var(--spacing-sm);
+            min-height: calc(100vh8rem);
+        }
+
+        .success-content {
+            gap: var(--spacing-md);
+            max-width: 100%;
+            padding: 0 var(--spacing-sm);
+        }
+
+        .success-icon {
+            width: 5rem;
+            height: 5rem;
+        }
+
+        .success-icon img {
+            width: 4rem;
+            height: 4rem;
+        }
+
+        .success-content .botao {
+            width: 100%;
+            max-width: 20rem;
+            padding: 0.75rem var(--spacing-lg);
+        }
+    }
