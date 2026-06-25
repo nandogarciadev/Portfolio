@@ -2,115 +2,88 @@
 <html lang="pt-br">
 
 <head>
-
     <!-- Fontes do Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Fonte do Google - Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="author" content="Generation Brasil">
-    <meta name="description" content="Portfólio da Generation Brasil, 
-                desenvolvedor Full Stack especializado em criar experiências 
-                digitais incríveis. Conheça meus projetos e entre em contato.">
+    <meta name="author" content="Fernando Garcia">
+    <meta name="description"
+        content="Portfólio profissional de Fernando Garcia, desenvolvedor Full Stack focado em soluções digitais modernas e eficientes.">
     <meta name="robots" content="index, follow">
-
     <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
-
-    <!-- SWIPER CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
-    <!-- Link para a Folha de Estilo da Página - CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
-
     <title>Meu Portfólio</title>
 </head>
 
 <body>
-    <!-- Cabeçalho da Página (header) -->
     <header>
-
-        <div class="menu- content">
-
-            <!-- TÍTULO -->
-            <a href="index.html" id="titulo">Portifólio</a>
-
-            <!-- MENU -->
+        <div class="menu-content">
+            <a href="index.html" id="titulo">Portfólio</a>
             <nav>
                 <ul class="menu-list">
-                    <li><a href="#hero">início</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="#hero" data-i18n="navHome">início</a></li>
+                    <li><a href="#about" data-i18n="navAbout">Sobre</a></li>
+                    <li><a href="#projects" data-i18n="navProjects">Projetos</a></li>
+                    <li><a href="#contact" data-i18n="navContact">Contato</a></li>
                 </ul>
             </nav>
-
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" type="button">Tema Escuro</button>
+                <label for="languageSelect" class="sr-only">Idioma</label>
+                <select id="languageSelect" class="language-select">
+                    <option value="pt-BR" selected>PT-BR</option>
+                    <option value="en-US">EN</option>
+                </select>
+            </div>
         </div>
-
     </header>
 
-    <!-- Seção Principal da Página (main) -->
     <main>
-
-        <!-- Seção de Boas Vindas -->
-        <section id="hero" class="section-container hero-container">
-
-            <!-- BOAS VINDAS -->
+        <section id="hero" class="section-container hero-container animate-on-scroll">
             <article class="hero-content">
-
-                <span>👋 Olá, eu sou a Fernando Garcia
-                </span>
-                <h1>Desenvolvedor Full Stack</h1>
-                <p>Transformando ideias em código e crio experiências digitais incríveis.
-
+                <span id="heroGreeting" data-i18n="heroGreeting">👋 Olá, eu sou o Fernando Garcia</span>
+                <h1 id="heroTitle" data-i18n="heroTitle">Desenvolvedor Full Stack</h1>
+                <p id="heroLead" data-i18n="heroLead">Transformando ideias em código e criando experiências digitais
+                    incríveis.</p>
                 <div class="buttons-container">
-                    <a href="#contact" class="botao">Entre em Contato</a>
-                    <a href="#about" class="botao-outline">Saiba Mais...</a>
+                    <a href="#contact" class="botao" id="heroContactBtn" data-i18n="heroContactBtn">Entre em Contato</a>
+                    <a href="#about" class="botao-outline" id="heroAboutBtn" data-i18n="heroAboutBtn">Saiba Mais...</a>
                 </div>
-
             </article>
 
-            <!-- IMAGEM -->
             <figure class="hero-image">
-                <img src="./assets/img/foto_dev_man.svg" alt="Foto do Autor" class="float-animation">
+                <img src="./assets/img/foto_dev_man.png" alt="Ilustração de desenvolvedor" class="float-animation">
             </figure>
-
         </section>
 
-        <!-- Seção Sobre o Autor -->
-        <section id="about" class="section-container about-container">
-
+        <section id="about" class="section-container about-container animate-on-scroll">
             <figure class="about-image">
-                <img src="./assets/img/avatar_dev_man.svg" alt="Foto do Perfil">
+                <img src="./assets/img/Fernando Garcia (3).jpg" alt="Foto do Perfil">
             </figure>
-
             <article class="about-content">
-                <h2>Sobre Mim</h2>
-                <p>
-                    Sou um desenvolvedor Full Stack apaixonado por criar soluções digitais inovadoras.
+                <h2 data-i18n="aboutTitle">Sobre Mim</h2>
+                <p data-i18n="aboutText1">Sou um desenvolvedor Full Stack apaixonado por criar soluções digitais
+                    inovadoras.
                     Com experiência em diversas tecnologias, estou sempre em busca de novos desafios para aprimorar
-                    minhas habilidades e contribuir para projetos impactantes.
-                </p>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                </p>
-
+                    minhas habilidades e contribuir para projetos impactantes.</p>
+                <p data-i18n="aboutText2">Tenho foco em usabilidade, desempenho e design moderno para entregar um
+                    portfólio
+                    com abordagem profissional e visual de tecnologia.</p>
                 <div class="about-button-data">
                     <div class="button-container">
-                        <a href="#" target="_blank" class="botao">GitHub</a>
-                        <a href="#" target="_blank" class="botao-outline">Curriculo</a>
+                        <a href="https://github.com/nandogarciadev" target="_blank" rel="noopener noreferrer"
+                            class="botao">GitHub</a>
+                        <a href="https://drive.google.com/file/d/1Xj35MBWMY6qReD5l66fMtD-KS5J_ZOTS/view?usp=sharing"
+                            target="_blank" rel="noopener noreferrer" class="botao-outline">Currículo</a>
                     </div>
-
                     <div class="data-container">
                         <div class="data-item">
                             <span class="data-number">100</span>
-                            <span class="data-label">Seguidores
-                            </span>
+                            <span class="data-label">Seguidores</span>
                         </div>
                         <div class="data-item">
                             <span class="data-number">10</span>
@@ -119,98 +92,223 @@
                     </div>
                 </div>
             </article>
-
         </section>
 
-        <!-- Seção de Projetos do Autor -->
-        <section id="projects" class="section-container projects-container">
-            <h2>Meus Projetos</h2>
+        <section id="skills" class="section-container skills-container animate-on-scroll">
+            <h2>Minhas Skills</h2>
+            <div class="skills-grid">
+                <div class="skills-card front">
+                    <h3 class="skills-icon"><img src="./assets/icons/social/code.svg" alt="Front-End"> Front-End</h3>
+                    <ul>
+                        <li>HTML/CSS</li>
+                        <li>Bootstrap</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>React</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="skills-card back">
+                    <h3 class="skills-icon"><img src="./assets/icons/social/server.svg" alt="Back-End"> Back-End</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>Spring Boot</li>
+                        <li>Spring Security</li>
+                        <li>REST APIs</li>
+                        <li>JPA/Hibernate</li>
+                        <li>Maven</li>
+                    </ul>
+                </div>
+                <div class="skills-card dev">
+                    <h3 class="skills-icon"><img src="./assets/icons/social/database.svg" alt="DevOps & BD"> DevOps & BD
+                    </h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>Git & GitHub</li>
+                        <li>Docker</li>
+                        <li>Linux</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-            <!-- Swiper Container -->
+        <section id="projects" class="section-container projects-container animate-on-scroll">
+            <h2 data-i18n="projectsTitle">Meus Projetos</h2>
             <div class="swiper projects-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-
                         <article class="project-card">
                             <figure class="project-image">
-                                <img src="./assets/icons/languages/github.svg" alt="Icone GitHub">
+                                <img src="./assets/icons/languages/github.svg" alt="Ícone GitHub">
                             </figure>
-
                             <div class="project-content">
-                                <h3>Projeto Github</h3>
-                                <p>Projeto Desenvolvido no GitHub</p>
-
+                                <h3>App Clima</h3>
+                                <p>Deploy em produção no GitHub Pages com interface limpa e responsiva.</p>
                                 <div class="project-tags">
-                                    <span class="tag">GitHub</span>
+                                    <span class="tag">React</span>
+                                    <span class="tag">API Clima</span>
                                 </div>
-
                                 <div class="project-buttons">
-                                    <a href="#" target="_blank" class="botao botao-sm">
-                                        GitHub
-                                    </a>
-                                    <a href="#" target="_blank" class="botao-outline botao-sm">
-                                        Deploy
-                                    </a>
-
+                                    <a href="https://github.com/nandogarciadev" target="_blank"
+                                        rel="noopener noreferrer" class="botao botao-sm">GitHub</a>
+                                    <a href="https://nandogarciadev.github.io/AppClima/" target="_blank"
+                                        rel="noopener noreferrer" class="botao-outline botao-sm">Deploy</a>
                                 </div>
                             </div>
                         </article>
                     </div>
                 </div>
-
-                <!-- Botões de navegação -->
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
-
-                <!-- Paginação -->
                 <div class="swiper-pagination"></div>
             </div>
         </section>
 
-
-        <!-- Seção Formulário de Contato e Redes Sociais -->
-        <section id="contact" class="section-container contact-container">
-            <!-- REDES SOCIAIS -->
+        <section id="contact" class="section-container contact-container animate-on-scroll">
             <article class="contact-info">
-                <h2>Entre em Contato</h2>
-                <p>Sinta-se à vontade para entrar em contato comigo!</p>
+                <h2 data-i18n="contactTitle">Entre em Contato</h2>
+                <p data-i18n="contactLead">Sinta-se à vontade para enviar uma mensagem — respondo rápido pelo e-mail ou
+                    telefone.</p>
                 <div class="social-container">
-                    <a href="#" target="_blank" class="social-icon" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/nandogarciadev/" target="_blank" rel="noopener noreferrer"
+                        class="social-icon" aria-label="LinkedIn">
+                        <img src="./assets/icons/social/linkedin.svg" alt="LinkedIn">
                     </a>
-                    <img src="./assets/icons/social/linkedin.svg" alt="Link para o Linkedin">
-                    <a href="#" target="_blank" class="social-icon" aria-label="GitHub">
-                        <img src="./assets/icons/social/github.svg" alt="Link para o GitHub">
-                    </a>
-                    <a href="#" target="_blank" class="social-icon" aria-label="Instagram">
-                        <img src="./assets/icons/social/instagram.svg" alt="Link para o Instagram">
+                    <a href="https://github.com/nandogarciadev" target="_blank" rel="noopener noreferrer"
+                        class="social-icon" aria-label="GitHub">
+                        <img src="./assets/icons/social/github.svg" alt="GitHub">
                     </a>
                 </div>
+                <div class="contact-details">
+                    <p><strong>Email:</strong> <a
+                            href="mailto:fernandogarcia98@hotmail.com">fernandogarcia98@hotmail.com</a></p>
+                    <p><strong>Telefone:</strong> <a href="tel:+5511977858191">(11) 97785-8191</a></p>
+                </div>
             </article>
-
-            <!-- FORMULÁRIO -->
             <form id="formulario">
-                <label for="nome">Nome</label>
+                <label for="nome" data-i18n="formName">Nome</label>
                 <input id="nome" name="nome" type="text" placeholder="Digite o seu nome completo">
                 <span id="erro-nome"></span>
-                <label for="email">E-mail</label>
+                <label for="email" data-i18n="formEmail">E-mail</label>
                 <input id="email" name="email" type="text" placeholder="Digite o seu e-mail">
                 <span id="erro-email"></span>
-                <label for="assunto">Assunto</label>
+                <label for="assunto" data-i18n="formSubject">Assunto</label>
                 <input id="assunto" name="assunto" type="text" placeholder="Digite o assunto da mensagem">
                 <span id="erro-assunto"></span>
-                <label for="mensagem">Mensagem</label>
+                <label for="mensagem" data-i18n="formMessage">Mensagem</label>
                 <textarea id="mensagem" name="mensagem" placeholder="Escreva a sua mensagem aqui..."></textarea>
                 <span id="erro-mensagem"></span>
-                <button class="botao" type="submit">Enviar Mensagem</button>
+                <button class="botao" type="submit" data-i18n="sendButton">Enviar Mensagem</button>
             </form>
         </section>
-
     </main>
 
-    <!-- Rodapé da Página (footer) -->
     <footer>
-        Desenvolvido por Fernando Garcia - 2026
+        <span data-i18n="footerText">Desenvolvido por Fernando Garcia - 2026</span>
     </footer>
+
+    <script>
+        const body = document.body;
+        const languageSelect = document.getElementById('languageSelect');
+        const themeToggle = document.getElementById('themeToggle');
+
+        const translations = {
+            'pt-BR': {
+                navHome: 'início',
+                navAbout: 'Sobre',
+                navProjects: 'Projetos',
+                navContact: 'Contato',
+                heroGreeting: '👋 Olá, eu sou o Fernando Garcia',
+                heroTitle: 'Desenvolvedor Full Stack',
+                heroLead: 'Transformando ideias em código e criando experiências digitais incríveis.',
+                heroContactBtn: 'Entre em Contato',
+                heroAboutBtn: 'Saiba Mais...',
+                aboutTitle: 'Sobre Mim',
+                aboutText1: 'Sou um desenvolvedor Full Stack apaixonado por criar soluções digitais inovadoras. Com experiência em diversas tecnologias, estou sempre em busca de novos desafios para aprimorar minhas habilidades e contribuir para projetos impactantes.',
+                aboutText2: 'Tenho foco em usabilidade, desempenho e design moderno para entregar um portfólio com abordagem profissional e visual de tecnologia.',
+                projectsTitle: 'Meus Projetos',
+                contactTitle: 'Entre em Contato',
+                contactLead: 'Sinta-se à vontade para enviar uma mensagem — respondo rápido pelo e-mail ou telefone.',
+                formName: 'Nome',
+                formEmail: 'E-mail',
+                formSubject: 'Assunto',
+                formMessage: 'Mensagem',
+                sendButton: 'Enviar Mensagem',
+                footerText: 'Desenvolvido por Fernando Garcia - 2026'
+            },
+            'en-US': {
+                navHome: 'Home',
+                navAbout: 'About',
+                navProjects: 'Projects',
+                navContact: 'Contact',
+                heroGreeting: '👋 Hi, I am Fernando Garcia',
+                heroTitle: 'Full Stack Developer',
+                heroLead: 'Turning ideas into code and crafting digital experiences.',
+                heroContactBtn: 'Get in Touch',
+                heroAboutBtn: 'Learn More...',
+                aboutTitle: 'About Me',
+                aboutText1: 'I am a Full Stack developer passionate about building innovative digital solutions. With experience in multiple technologies, I continuously pursue new challenges to sharpen my skills and contribute to impactful projects.',
+                aboutText2: 'I focus on usability, performance and modern design to deliver a professional portfolio with a technology-driven look.',
+                projectsTitle: 'My Projects',
+                contactTitle: 'Get in Touch',
+                contactLead: 'Feel free to send a message — I respond quickly by email or phone.',
+                formName: 'Name',
+                formEmail: 'Email',
+                formSubject: 'Subject',
+                formMessage: 'Message',
+                sendButton: 'Send Message',
+                footerText: 'Built by Fernando Garcia - 2026'
+            }
+        };
+
+        const i18nElements = document.querySelectorAll('[data-i18n]');
+
+        function applyLanguage(locale) {
+            const selected = translations[locale] || translations['pt-BR'];
+            i18nElements.forEach((element) => {
+                const key = element.dataset.i18n;
+                if (selected[key]) {
+                    element.textContent = selected[key];
+                }
+            });
+            document.documentElement.lang = locale;
+            languageSelect.value = locale;
+            localStorage.setItem('portfolioLanguage', locale);
+        }
+
+        function applyTheme(theme) {
+            const isDark = theme === 'dark';
+            body.classList.toggle('dark-theme', isDark);
+            themeToggle.textContent = isDark ? 'Tema Claro' : 'Tema Escuro';
+            localStorage.setItem('portfolioTheme', theme);
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.classList.contains('dark-theme') ? 'dark' : 'light';
+            applyTheme(currentTheme === 'dark' ? 'light' : 'dark');
+        });
+
+        languageSelect.addEventListener('change', (event) => {
+            applyLanguage(event.target.value);
+        });
+
+        const savedTheme = localStorage.getItem('portfolioTheme') || 'light';
+        const savedLanguage = localStorage.getItem('portfolioLanguage') || 'pt-BR';
+        applyTheme(savedTheme);
+        applyLanguage(savedLanguage);
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.15,
+        });
+
+        document.querySelectorAll('.animate-on-scroll').forEach((element) => observer.observe(element));
+    </script>
 </body>
 
 </html>
