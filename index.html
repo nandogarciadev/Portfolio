@@ -100,69 +100,81 @@
                 <div class="skills-card front">
                     <h3 class="skills-icon"><img src="./assets/icons/social/code.svg" alt="Front-End"> Front-End</h3>
                     <ul>
-                        <li>HTML/CSS</li>
-                        <li>Bootstrap</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
                         <li>JavaScript</li>
-                        <li>TypeScript</li>
+                        <li>Tailwind CSS</li>
                         <li>React</li>
-                        <li>Responsive Design</li>
+                        <li>Vite</li>
                     </ul>
                 </div>
                 <div class="skills-card back">
                     <h3 class="skills-icon"><img src="./assets/icons/social/server.svg" alt="Back-End"> Back-End</h3>
                     <ul>
-                        <li>Java</li>
+                        <li>Java (Versões LTS)</li>
                         <li>Spring Boot</li>
                         <li>Spring Security</li>
-                        <li>REST APIs</li>
-                        <li>JPA/Hibernate</li>
-                        <li>Maven</li>
+                        <li>Spring Data JPA</li>
+                        <li>Gerenciador de Dependências</li>
+                        <li>Banco de Dados</li>
                     </ul>
                 </div>
                 <div class="skills-card dev">
-                    <h3 class="skills-icon"><img src="./assets/icons/social/database.svg" alt="DevOps & BD"> DevOps & BD
+                    <h3 class="skills-icon"><img src="./assets/icons/social/database.svg" alt="DevOps"> DevOps
                     </h3>
                     <ul>
                         <li>MySQL</li>
                         <li>Git & GitHub</li>
                         <li>Docker</li>
-                        <li>Linux</li>
+                        <li>Arquitetura de Microserviços</li>
+                        <li>CI/CD</li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="section-container projects-container animate-on-scroll">
-            <h2 data-i18n="projectsTitle">Meus Projetos</h2>
-            <div class="swiper projects-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <article class="project-card">
-                            <figure class="project-image">
-                                <img src="./assets/icons/languages/github.svg" alt="Ícone GitHub">
-                            </figure>
-                            <div class="project-content">
-                                <h3>App Clima</h3>
-                                <p>Deploy em produção no GitHub Pages com interface limpa e responsiva.</p>
-                                <div class="project-tags">
-                                    <span class="tag">React</span>
-                                    <span class="tag">API Clima</span>
-                                </div>
-                                <div class="project-buttons">
-                                    <a href="https://github.com/nandogarciadev" target="_blank"
-                                        rel="noopener noreferrer" class="botao botao-sm">GitHub</a>
-                                    <a href="https://nandogarciadev.github.io/AppClima/" target="_blank"
-                                        rel="noopener noreferrer" class="botao-outline botao-sm">Deploy</a>
-                                </div>
-                            </div>
-                        </article>
+    <h2 data-i18n="projectsTitle">Meus Projetos</h2>
+    <div class="swiper projects-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <article class="project-card">
+                    <!-- Correção da tag e inserção do ícone maior com acessibilidade descritiva -->
+                    <figure class="project-image" style="display: flex; justify-content: center; align-items: center; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 16px 16px 0 0;">
+                        <span role="img" aria-label="Sol entre nuvens" style="font-size: 5rem; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));">🌤️</span>
+                    </figure>
+                    
+                    <div class="project-content">
+                        <!-- Nome comercial e técnico unificados -->
+                        <h3>Weather's Time</h3>
+                        
+                        <!-- Descrição com foco em soft skills, acessibilidade e design de impacto -->
+                        <p>Aplicação web inclusiva projetada sob diretrizes WCAG AAA e Design Universal para o público idoso. Apresenta interface intuitiva estilo iOS, tratamento de GPS nativo e mensagens de acolhimento humanizadas.</p>
+                        
+                        <!-- Tags atualizadas para refletir o seu domínio de JavaScript puro -->
+                        <div class="project-tags">
+                            <span class="tag">JavaScript ES6+</span>
+                            <span class="tag">Acessibilidade WCAG AAA</span>
+                            <span class="tag">Open-Meteo API</span>
+                        </div>
+                        
+                        <!-- Botão único de conversão direta conforme solicitado -->
+                        <div class="project-buttons">
+                            <a href="https://nandogarciadev.github.io/AppClima/" target="_blank"
+                                rel="noopener noreferrer" class="botao botao-sm" style="width: 100%; text-align: center; display: block;">
+                                Acessar Aplicação
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+                </article>
             </div>
-        </section>
+        </div>
+        <!-- Controles de navegação do Swiper -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
 
         <section id="contact" class="section-container contact-container animate-on-scroll">
             <article class="contact-info">
