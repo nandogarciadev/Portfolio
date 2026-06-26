@@ -34,24 +34,18 @@ O projeto consome dados dinâmicos da **API do GitHub**, permitindo que informa�
 
 ------
 
-## Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
-```
-portfolio/
-│
-├── index.html        # Página principal do portfólio
-├── success.html      # Página de confirmação de envio do formulário
-│
+```text
+.
 ├── assets/
-│   ├── css/
-│   │   └── styles.css    # Estilos e responsividade
-│   ├── js/
-│   │   └── scripts.js   # Integração com GitHub, carrossel e validações
-│   ├── img/             # Imagens e ilustrações
-│   └── icons/           # Ícones das linguagens e redes sociais
-│
-└── README.md
-```
+│   ├── CSS/            # Arquivos de estilização (style.css, etc.)
+│   ├── icons/          # Ícones utilizados na interface
+│   └── img/            # Imagens e fundos dinâmicos
+├── .gitignore          # Arquivos e pastas ignorados pelo Git
+├── index.html          # Página principal da aplicação (Previsão do Tempo)
+├── README.md           # Documentação oficial do projeto
+└── success.html        # Página de feedback ou sucesso
 
 ------
 
@@ -66,49 +60,10 @@ portfolio/
 
 ------
 
-## Executando Localmente
-
-Para executar o projeto em ambiente local, siga os passos abaixo.
-
-### Pré-requisitos
-
-- [Visual Studio Code](https://code.visualstudio.com/) (ou outro editor de sua preferência)
-- Extensão **Live Server** instalada no VS Code
-
-### Passos
-
-1. Clone o repositório:
-
-   ```bash
-   git clone https://github.com/nandogarciadev/Portf-lio.git
-   ```
-
-2. Acesse a pasta do projeto:
-
-   ```bash
-   cd seu-repositorio
-   ```
-
-3. Abra o projeto no Visual Studio Code:
-
-   ```bash
-   code .
-   ```
-
-4. Abra o arquivo `index.html`, clique com o botão direito e selecione **"Open with Live Server"**.
-
-O site será aberto no navegador e todas as alterações poderão ser visualizadas em tempo real.
-
-------
-
 ## Deploy
 
 Este site está disponível publicamente através do **GitHub Pages**. Você pode acessar a versão online pelo link abaixo:
 
-🔗 https://github.com/nandogarciadev/Portfolio.git
+🔗 https://nandogarciadev.github.io/Portfolio/
 
 ------
-
-## Contribuições
-
-Contribuições são bem-vindas. Caso tenha sugestões de melhorias, correções ou novas funcionalidades, sinta-se à vontade para abrir uma **issue** ou enviar um **pull request**.
