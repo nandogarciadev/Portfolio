@@ -43,9 +43,11 @@ O projeto consome dados dinâmicos da **API do GitHub**, permitindo que informa�
 │   ├── icons/          # Ícones utilizados na interface
 │   └── img/            # Imagens e fundos dinâmicos
 ├── .gitignore          # Arquivos e pastas ignorados pelo Git
-├── index.html          # Página principal da aplicação (Previsão do Tempo)
+├── index.html          # Página principal da aplicação (Portifolio Pessoal)
 ├── README.md           # Documentação oficial do projeto
-└── success.html        # Página de feedback ou sucesso
+└── success.html        # Página de feedback ou sucesso 
+
+```
 
 ------
 
@@ -55,7 +57,7 @@ O projeto consome dados dinâmicos da **API do GitHub**, permitindo que informa�
 - **CSS3**: Estilização, layout responsivo e animações
 - **JavaScript (ES6+)**: Interatividade, consumo de APIs e validações
 - **Swiper.js**: Carrossel de projetos responsivo
-- **Fom Submit:** Serviço de envio de e-mails via formulário HTML
+- **FormSubmit:** Serviço de envio de e-mails via formulário HTML
 - **GitHub API**: Fonte dinâmica de dados do perfil e repositórios
 
 ------
